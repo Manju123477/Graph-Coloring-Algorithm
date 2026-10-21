@@ -1,7 +1,7 @@
-:root{--bg:#f6f5f1;--surface:#fff;--text:#1d1d1b;--muted:#6b6a64;--line:#d9d7ce;--accent:#2f5bd8;--bad:#d93a3a;--edge:#8d8b82;
+:root{--bg:#eaf5f2;--surface:#ffffff;--text:#12332e;--muted:#55736e;--line:#c3dcd6;--accent:#0b7f70;--on:#ffffff;--bad:#e11d48;--edge:#7aa39b;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17171a;--surface:#212126;--text:#ecebe6;--muted:#9a99a3;--line:#37373f;--accent:#7b9cff;--bad:#ff6b6b;--edge:#6f6f7a;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#17171a;--surface:#212126;--text:#ecebe6;--muted:#9a99a3;--line:#37373f;--accent:#7b9cff;--bad:#ff6b6b;--edge:#6f6f7a;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1d1b;--surface:#132a27;--text:#e1f3ef;--muted:#8db2ab;--line:#24433e;--accent:#2dd4bf;--on:#06201c;--bad:#fb7185;--edge:#5f8a82;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c1d1b;--surface:#132a27;--text:#e1f3ef;--muted:#8db2ab;--line:#24433e;--accent:#2dd4bf;--on:#06201c;--bad:#fb7185;--edge:#5f8a82;color-scheme:dark}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -13,8 +13,8 @@ p.sub{margin:0 0 14px;color:var(--muted)}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px}
 .row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
 button,select{font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer}
-button.on{background:var(--accent);border-color:var(--accent);color:#fff}
-button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+button.on{background:var(--accent);border-color:var(--accent);color:var(--on)}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--on)}
 svg{width:100%;height:auto;display:block;background:var(--bg);border-radius:8px;touch-action:none;border:1px solid var(--line)}
 label{color:var(--muted);font-size:13px}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
